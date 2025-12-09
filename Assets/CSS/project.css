@@ -1,0 +1,428 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* navbar */
+.logo {
+  width: 120px;
+}
+.navbar {
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  text-decoration: none;
+  display: block;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.nav a:hover {
+  color: #438f71;
+}
+.nav .drop {
+  position: relative;
+}
+.nav .dropdown {
+  display: none;
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 5px;
+  min-width: 200px;
+  padding: 5px;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px 5px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.nav .drop:hover .dropdown {
+  display: block;
+}
+
+/* hero */
+.hero {
+  background-image: url(../IMG/Projects/hero.jpg);
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  /* margin-bottom: 0; */
+}
+.hero::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+}
+.con1 {
+  position: relative;
+  z-index: 1;
+}
+.h12 {
+  color: #fff;
+  text-align: center;
+  font-weight: bolder;
+  padding-top: 85px;
+  font-weight: bolder;
+}
+.h14 {
+  color: #fff;
+  text-align: center;
+}
+
+/* con2 */
+.hd {
+  text-align: center;
+  margin-top: 30px;
+}
+.hd h2 {
+  color: #438f71;
+}
+.hd h1 {
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+  flex-wrap: wrap;
+}
+span {
+  color: #438f71;
+  font-weight: bold;
+}
+
+/* con3 */
+.con3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+img {
+  width: 350px;
+}
+.bt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+.btn {
+  background-color: #438f71;
+  color: #fff;
+  padding: 20px 30px;
+  border: none;
+  font-weight: bolder;
+}
+.btn:hover {
+  background-color: #333;
+}
+
+/* con4 */
+.con-4 {
+  background-color: #f0f1eb;
+  padding: 10px 0 20px 0;
+}
+.con4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* SPACE BETWEEN THE THREE DIVS */
+  margin: 40px;
+}
+
+.gap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* space between images */
+}
+
+.clock {
+  width: 400px;
+  height: 500px;
+  margin-top: 30px;
+}
+
+.hd4 h3 {
+  color: #438f71;
+}
+.h4d h4 {
+  margin-top: 30px;
+}
+.fa-check {
+  color: #438f71;
+  margin-right: 10px;
+}
+.btn1 {
+  background-color: #438f71;
+  color: #fff;
+  padding: 20px 30px;
+  border: none;
+  font-weight: bolder;
+}
+.btn1:hover {
+  background-color: #333;
+}
+
+/* con5 */
+.con5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 40px 0 40px 0;
+}
+.hat {
+  width: 500px;
+}
+.bgc {
+  background-color: #f0f1eb;
+  padding: 20px;
+  margin: 20px;
+}
+.left {
+  position: relative;
+  background-color: #f0f1eb;
+  padding: 10px;
+  margin-bottom: 20px;
+  right: 120px; /* now it will move left by 80px */
+}
+.left h3 {
+  color: #438f71;
+}
+.bus {
+  width: 450px;
+}
+
+/* footer */
+.ft {
+  background-color: #333;
+  color: #fff;
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.ft2 h3 {
+  margin-bottom: 15px;
+}
+.ft2 a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.ft2 a:hover {
+  color: #438f71;
+}
+/* ===========================
+   🔥 1200px (Large Laptop)
+=========================== */
+@media (max-width: 1200px) {
+  .con4 {
+    gap: 20px;
+  }
+  .clock {
+    width: 330px;
+    height: auto;
+  }
+  .bus {
+    width: 350px;
+  }
+}
+
+/* ===========================
+   🔥 992px (Normal Laptops / Tabs)
+=========================== */
+@media (max-width: 992px) {
+  .nav1 ul {
+    gap: 15px;
+  }
+
+  .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .con3 {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  img {
+    width: 300px;
+  }
+
+  .con4 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .gap {
+    flex-direction: row;
+  }
+
+  .hat,
+  .bus {
+    width: 350px;
+  }
+
+  .left {
+    right: 0;
+    text-align: center;
+  }
+
+  .ft {
+    height: auto;
+    padding: 20px;
+  }
+}
+
+/* ===========================
+   🔥 768px (Tablets)
+=========================== */
+@media (max-width: 768px) {
+  .nav1 {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav1 ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero h4 {
+    font-size: 16px;
+  }
+
+  .con3 img {
+    width: 250px;
+  }
+
+  .clock {
+    width: 260px;
+  }
+
+  .hat {
+    width: 350px;
+  }
+
+  .bus {
+    width: 300px;
+  }
+
+  .ft {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+/* ===========================
+   🔥 480px (Mobile)
+=========================== */
+@media (max-width: 480px) {
+  .logo {
+    width: 90px;
+  }
+
+  .hero {
+    height: 220px;
+  }
+
+  img {
+    width: 250px;
+  }
+
+  .con4 {
+    margin: 10px;
+  }
+
+  .btn,
+  .btn1 {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .hat,
+  .bus {
+    width: 250px;
+  }
+
+  .ft {
+    padding: 10px;
+  }
+}
+
+/* ===========================
+   🔥 375px (Small Phones)
+=========================== */
+@media (max-width: 375px) {
+  .nav1 ul {
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  img {
+    width: 220px;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .btn,
+  .btn1 {
+    padding: 10px 18px;
+  }
+
+  .hat,
+  .bus {
+    width: 220px;
+  }
+
+  .clock {
+    width: 220px;
+  }
+}
